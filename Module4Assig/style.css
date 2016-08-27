@@ -1,0 +1,98 @@
+.style {
+	font-family: Arial, sans-serif;
+}
+* { box-sizing: border-box }
+
+
+/* Large Devices */
+@media (min-width: 992px)
+{
+	.col-lg-3{
+		float: left;
+		border: 1px solid red;
+	}
+	.col-lg-3{
+		width: 33.33%
+	}
+	#pr1, #pr2, #pr3{
+		width: 30.5%
+	}
+}
+
+/* Meduim Devices */
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	.col-md-2{
+		float: left;
+		border: 1px solid red;
+	}
+	.col-md-2{
+		width: 50%;
+	}
+	#pr1, #pr2{
+		width: 46%;
+	}
+	#pr3{
+		width: 95%;
+	}
+}
+/* Small Devices*/
+@media (max-width: 767px){
+	#pr1, #pr2, #pr3{
+		width:95%;
+	}
+}
+
+h1{
+	text-align: center;
+}
+
+.row {
+  border: 2px solid black;
+  background-color: #A52A2A;
+  width: 400px;
+  height: 200px;
+ /* margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;*/
+  margin: 13px;
+  font-family: Helvetica;
+  color: white; 
+  position: relative;
+}
+#pr3 {
+	margin-right: 0;
+}
+
+h2 {
+	border: 2px solid black;
+	 width: 110px;
+	 float:right;
+	 padding: 5px;
+	 margin-bottom: 15px;
+	 margin-top: 0;
+
+}
+#h1 {
+	
+	background-color: #DEB887;
+	
+}
+#h2 {
+	background-color: #5F9EA0;
+	
+}
+#h3 {
+	
+	background-color: #FF7F50;
+	
+}
+section {
+
+	clear: right;
+	padding-left: 10px;
+	padding: 10px;
+
+}
