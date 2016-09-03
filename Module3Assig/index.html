@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,12 +18,83 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a id="web_header" class="navbar-brand" href="index.html"><h1>Fooood, LLC</h1></a>
 
-  <h1>Hello Coursera!</h1>
+          <button id= "butt" type="button" class="visible-xs navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+      </div>
 
+      <div class="collapse navbar-collapse" id="collapsable-nav">
+
+       <ul class="nav navbar-nav navbar-right visible-xs" id="list">
+         <li><a href="#ChichenSec"><span class="glyphicon glyphicon-star"></span class="list_item" >Chicken</a>
+         </li>
+         <li><a href="#BeefSec"><span class="glyphicon glyphicon-star"></span class="list_item">Beef</a>
+         </li>
+         <li>
+          <a href="#SushiSec"><span class="glyphicon glyphicon-star"></span class="list_item">Sushi</a>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- Container -->
+  </nav> <!-- Navbar-->
+
+<div class="container">  <!-- the main content-->
+ <h2> <p class="text-center" id="top">Our Menu</p> 
+ </h2>
+ <div class="list_text col-xs-12" id="ChichenSec"><span>Chicken<br></span> 
+    Create a single really tall section that will use the Bootstrap Grid 
+    and take up the entire width  of   the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can
+     either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be 
+     tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its 
+     background color is set to distinguish it from the rest of the content. (Hint: don’t forget to have an
+      element with a class=’container’ or class=’container-fluid’ wrapping your grid. Remember that to have 
+      the grid do something “always”, i.e., no matter what browser window size, use the col-xs-... 
+      classes. In this case, since we want the section to take up the entire row, use col-xs-12.)
+      Create a single really tall section that will use the Bootstrap Grid 
+    and take up the entire width  of   the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can
+     
+  </div>
+  <div class="list_text col-xs-12" id="BeefSec"><span>Beef<br></span> 
+      Create a single really tall section that will use the Bootstrap Grid and take up the entire width of the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can
+     either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be 
+     tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its 
+     background color is set to distinguish it from the rest of the content. (Hint: don’t forget to have an
+      element with a class=’container’ or class=’container-fluid’ wrapping your grid. Remember that to have 
+      the grid do something “always”, i.e., no matter what browser window size, use the col-xs-... 
+      classes. In this case, since we want the section to take up the entire row, use col-xs-12.)
+      Create a single really tall section that will use the Bootstrap Grid 
+    and take up the entire width  of   the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can
+     either fill it out with a LOT of text or simply set its height 
+     
+  </div>
+  <div class="list_text col-xs-12" id="SushiSec"><span>Sushi<br></span> Create a single really tall section that will use the 
+      Bootstrap Grid  and 
+      take up the entire width   of the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can
+     either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be 
+     tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its 
+     background color is set to distinguish it from the rest of the content. (Hint: don’t forget to have an
+      element with a class=’container’ or class=’container-fluid’ wrapping your grid. Remember that to have 
+      the grid do something “always”, i.e., no matter what browser window size, use the col-xs-... 
+      classes. In this case, since we want the section to take up the entire row, use col-xs-12.)
+      Create a single really tall section that will use the Bootstrap Grid 
+    and take up the entire width  of   the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can
+     either fill it out with a LOT of text or 
+     
+  </div>
+  <p class="text-center"><a id="back" href="#top">Back to top</a></p>
+
+</div> <!-- container -->
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+
 </body>
 </html>

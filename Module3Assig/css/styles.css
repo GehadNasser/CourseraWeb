@@ -1,0 +1,49 @@
+.container-fluid
+{
+	background-color: #778899;
+	height: 100px;
+}
+#web_header {
+	color: #FFF;
+}
+#butt {
+	background-color: #E7E777;
+	margin-top: 35px;
+}
+#list {
+	text-align: center;
+}
+
+#list  a:hover{
+background: #E7E7E7;
+
+}
+#list {
+	background-color: #E7E777;
+}
+#back {
+	font-size: 1.5em;
+	margin-top: 15px;
+	text-align: center;
+}
+h1, h2 {
+    font-weight: bolder;
+
+}
+.list_item {
+
+	padding: 5px;
+	margin: 5px;
+
+}
+.list_text {
+	text-align: center;
+	background-color: #778899;
+	height: 1000px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.5em
+}
+.list_text span{
+	font-size: 1.8em;
+}
