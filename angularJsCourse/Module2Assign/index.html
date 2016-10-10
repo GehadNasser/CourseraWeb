@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ShoppingListCheckOff">
+	<head>
+		<title>Shopping List Check Off</title>
+		<script src="angular.min.js"></script>
+   		<script src="app.js"></script>
+   		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   		
+		<style>
+			.Container{
+				padding: 30px;
+				margin: 10px;
+				
+			}
+     	 .message { font-size: 1.3em; font-weight: bold; }
+   		</style>
+
+	</head>
+	<body>
+		<div class="contariner Container">
+			<h1>Shopping List Check Off</h1>
+
+			<div class="row">
+			<!-- To Buy Lisy -->
+				<div class="col-md-6" ng-controller='ToBuyListController as BuyItem'>
+					<h2>To Buy</h2>
+					<ul>
+						<li ng-repeat="item in BuyItem.ToBuyShoppingList"> Buy {{item.quantity}} {{item.name}}   <button ng-click="BuyItem.removeItem($index); BuyItem.addItem();"><!-- <span class="glyphicon glyphicon-ok"></span> --> Buoght </button></li>
+						<!-- <li> Buy 16 Cookies <button><span class="glyphicon glyphicon-ok"></span> Buy</button></li>
+						<li> Buy 17 Cookies <button><span class="glyphicon glyphicon-ok"></span> Buy</button></li> -->
+						
+					</ul>
+					<div ng-if = "!BuyItem.message" class="EmptyMsg error">{{BuyItem.message}}</div>
+					
+				</div> <!-- List #1 -->
+
+				<!-- Bought List -->
+				<div class="col-md-6" ng-controller='BoughtListController as BoughtItem'>
+					<h2>Already Bought</h2>
+					<ul>
+						<li ng-repeat="item in BoughtItem.showList;">Bought {{item.quantity}} {{item.name}}   </li>
+						
+						
+					</ul>
+					<div ng-if = "BoughtItem.message" class="EmptyMsg error"> {{BoughtItem.message}} </div>
+					
+				</div><!-- List #2 -->
+
+			</div> <!-- class = row -->
+		</div><!--Container-->
+
+	</body>
+</html>
