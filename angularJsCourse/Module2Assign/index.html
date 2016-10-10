@@ -30,7 +30,7 @@
 						<li> Buy 17 Cookies <button><span class="glyphicon glyphicon-ok"></span> Buy</button></li> -->
 						
 					</ul>
-					<div ng-if = "!BuyItem.message" class="EmptyMsg error">{{BuyItem.message}}</div>
+				<!-- 	<div ng-if = "!BuyItem.message" class="EmptyMsg error">{{BuyItem.message}}</div> -->
 					
 				</div> <!-- List #1 -->
 
@@ -40,9 +40,8 @@
 					<ul>
 						<li ng-repeat="item in BoughtItem.showList;">Bought {{item.quantity}} {{item.name}}   </li>
 						
-						
 					</ul>
-					<div ng-if = "BoughtItem.message" class="EmptyMsg error"> {{BoughtItem.message}} </div>
+					<!-- <div ng-if = "BoughtItem.message" class="EmptyMsg error"> {{BoughtItem.message}} </div> -->
 					
 				</div><!-- List #2 -->
 
